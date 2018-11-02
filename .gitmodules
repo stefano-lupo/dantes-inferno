@@ -1,0 +1,3 @@
+[submodule "secret-sharing"]
+	path = secret-sharing
+	url = https://github.com/blockstack/secret-sharing.git
