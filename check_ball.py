@@ -4,9 +4,13 @@ import json
 
 from inferno import *
 
-if __name__ == '__main__':
+
+def main():
     ball = get_ball()
     pot = get_pot()
+    if len(get_cracked_passwords(ball, pot)) < 2:
+        print('Not enough passwords cracked yet to even try')
+        return
     secret = get_secret(ball, pot)
     cipher = decrypt_cipher(ball, secret)
     print(cipher[:40])
@@ -17,3 +21,7 @@ if __name__ == '__main__':
     except (ValueError, UnicodeDecodeError):
         print('{:d} passwords, can\' crack yet'.format(len(
             get_cracked_passwords(ball, pot))))
+
+
+if __name__ == '__main__':
+    main()

@@ -33,6 +33,7 @@ def get_ball(path: Path = BALL_PATH,
     ball = json.loads(ball)
     if SECRETS_PATH.exists():
         secrets = secrets_path.read_file().splitlines()
+        level = level if level >= 0 else len(secrets)
         for secret in secrets[:level]:
             ball = descend(ball, secret)
     return ball
