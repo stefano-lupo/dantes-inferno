@@ -19,8 +19,8 @@ def main():
         print(secret)
         print('Next level reached!')
     except (ValueError, UnicodeDecodeError):
-        print('{:d} passwords, can\' crack yet'.format(len(
-            get_cracked_passwords(ball, pot))))
+        print('{:d} passwords but no can do'
+              .format(len(get_cracked_passwords(ball, pot))))
 
 
 if __name__ == '__main__':
