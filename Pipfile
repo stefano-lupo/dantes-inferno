@@ -11,7 +11,7 @@ unipath = "*"
 watchdog = "*"
 enlighten = "*"
 delegator-py = "*"
-secretsharing = { editable = true, path = "./secret-sharing" }
+secretsharing = {editable = true, path = "./secret-sharing"}
 sarge = "*"
 pendulum = "*"
 regex = "*"
