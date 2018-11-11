@@ -10,7 +10,7 @@ from hashes import *
 
 BALL_PATH = Path('00092_blottn.as5')
 SECRETS_PATH = Path('00092_blottn.secrets')
-POT_PATH = Path('potfile')
+POT_PATH = Path('practical6_10.potfile')
 
 BallType = Dict
 PotType = List[Tuple[str, str]]
